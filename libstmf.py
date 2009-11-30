@@ -1,7 +1,16 @@
 #
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+#
 # Copyright 2009 Grigale Ltd. All rights reserved.
 # Use is subject to license terms.
 #
+
 import ctypes as C
 
 STMF_LOGICAL_UNIT_OFFLINE	= 0
@@ -79,9 +88,12 @@ class stmfState(C.Structure):
     _fields_ = [("operationalState", C.c_int),
                 ("configState", C.c_int)]
 
+
+
+# Load the shared library
 _libstmf = C.CDLL("libstmf.so.1")
 
-# API callable functions
+# Initialize callable functions
 
 # int stmfGetState(stmfState *);
 stmfGetState = _libstmf.stmfGetState
