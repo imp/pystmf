@@ -7,7 +7,7 @@
 # and limitations under the License.
 #
 #
-# Copyright 2009 Grigale Ltd. All rights reserved.
+# Copyright 2009-2011 Grigale Ltd. All rights reserved.
 # Use is subject to license terms.
 #
 
@@ -31,6 +31,8 @@ STMF_CONFIG_STATE_NONE		= 14
 STMF_CONFIG_STATE_INIT		= 15
 STMF_CONFIG_STATE_INIT_DONE	= 16
 STMF_CONFIG_STATE_UNKNOWN	= 17
+STMF_DEFAULT_LU_STATE		= 18
+STMF_DEFAULT_TARGET_PORT_STATE	= 19
 
 STMF_IDENT_LENGTH		= 255
 
